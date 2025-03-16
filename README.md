@@ -1,8 +1,9 @@
 Word Frequency
 
-Total number of trumps tweets analyzed from condensed_*.json from 2009-2018: 36307
+Total number of tweets analyzed by Trump from 2009-2019: 36307
 
 |      Phrase     |   Percent of Tweets  |
+|---------------|----------------------|
 |            trump |  38.35% |
 |            obama |   7.47% |
 |           mexico |   0.55% |
