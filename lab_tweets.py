@@ -188,6 +188,7 @@ for tweet in data:
 pprint.pprint(word_counts)
 
 markdown_table = '|      Phrase     |   Percent of Tweets  |\n'
+markdown_table += '|---------------|----------------------|\n'
 
 for word, count in word_counts.items():
     percentage = (count / total_tweets) * 100  
@@ -196,7 +197,7 @@ print(markdown_table)
 
 with open("README.md", "w", encoding="utf-8") as readme_file:
     readme_file.write("Word Frequency\n\n")
-    readme_file.write(f"Total number of trumps tweets analyzed from condensed_*.json from 2009-2018: {total_tweets}\n\n")
+    readme_file.write(f"Total number of tweets analyzed by Trump from 2009-2019: {total_tweets}\n\n")
     readme_file.write(markdown_table)
 
 
