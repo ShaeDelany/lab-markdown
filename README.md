@@ -1,6 +1,6 @@
 Word Frequency
 
-Total number of tweets analyzed by Trump from 2009-2019: 36307
+Total number of tweets by Trump analyzed by from 2009-2019: 36307
 
 |      Phrase     |   Percent of Tweets  |
 |---------------|----------------------|
