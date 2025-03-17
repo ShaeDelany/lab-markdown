@@ -1,4 +1,4 @@
-#Word Frequency
+#Word Frequency Percentage
 
 Total *number* of tweets by Trump analyzed by from 2009-2018: **36307**
 
@@ -12,3 +12,8 @@ Total *number* of tweets by Trump analyzed by from 2009-2018: **36307**
 |        president |   7.21% |
 | make america great again |   1.27% |
 |      immigration |   0.64% |
+
+#Bar Graph
+
+![Graph includes all the data from the table above](Trump_Tweet_Figure.png)
+
