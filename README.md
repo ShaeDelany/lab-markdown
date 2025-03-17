@@ -18,3 +18,9 @@ Total *number* of tweets by Trump analyzed by from 2009-2018: **36307**
 This graph includes all the data from the table above.
 
 ![Graph includes all the data from the table above](Trump_Tweet_Figure.png)
+
+# Extra Credit
+
+This graph shows the amount of tweets Trump sent per day of the week from 2009-2018
+
+![Weekday Trump Tweets](Weekday_Figure.png)
