@@ -187,6 +187,7 @@ for tweet in data:
                 word_counts[word] += 1
 pprint.pprint(word_counts)
 
+'''
 markdown_table = '|      Phrase     |   Percent of Tweets  |\n'
 markdown_table += '|---------------|----------------------|\n'
 
@@ -197,8 +198,54 @@ print(markdown_table)
 
 with open("README.md", "w", encoding="utf-8") as readme_file:
     readme_file.write("Word Frequency\n\n")
-    readme_file.write(f"Total number of tweets by Trump analyzed from 2009-2019 = {total_tweets}\n\n")
+    readme_file.write(f"Total number of tweets by Trump analyzed by from 2009-2019: {total_tweets}\n\n")
     readme_file.write(markdown_table)
+'''
+
+lab_dict = {
+    'fake news': 412,
+    'trump': 13924,
+    'obama': 2712,
+    'mexico': 199,
+    'president': 2616,
+    'russia': 412,
+    'make america great again': 462,
+    'immigration': 231
+}
+
+# x - axis
+
+terms = list(lab_dict.keys())
+print(f'terms={terms}')  
+
+# y - axis
+counts = list(lab_dict.values())
+print(f'counts={counts}')
+
+sorted_terms = []
+sorted_counts = []
+for i, term in enumerate(sorted(terms)):
+    sorted_terms.append(term)
+    sorted_counts.append(lab_dict[term])
+
+print(f'sorted_terms={sorted_terms}')
+print(f'sorted_counts={sorted_counts}')
+
+
+# this code generates a plot
+import matplotlib.pyplot as plt
+plt.bar(sorted_terms, sorted_counts)
+plt.subplots_adjust(bottom=0.4)
+plt.xticks(rotation=45, ha="right")
+plt.xlabel("Word")
+plt.ylabel("Counts")
+plt.title("Word Frequency in Tweets")
+
+#plt.show()
+plt.savefig('Trump_Tweet_Figure.png')
+
+
+
 
 
 
